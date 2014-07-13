@@ -1,0 +1,9 @@
+
+<ul>
+  <% new_friends.each do |user| %>
+    <li>
+      <%= user.name || user.email %>
+      <%=  link_to "Follow", friendships_path(:friend_id => user), method: :post %>
+    </li>
+  <% end %>
+<ul>

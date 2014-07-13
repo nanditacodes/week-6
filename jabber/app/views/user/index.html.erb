@@ -1,0 +1,8 @@
+<div class="container">
+  <%= render partial: 'listfriends', :locals => { new_friends: @new_friends} %>
+  <br>
+  <%= render partial: 'info' %>
+  <%= render partial: 'jabber/form' %>
+  <br>
+  <%= render partial: 'jabber/jabber', :locals => { jabbers: @all_my_jabbers} %>
+</div>

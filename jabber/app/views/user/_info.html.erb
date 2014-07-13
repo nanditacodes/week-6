@@ -1,0 +1,6 @@
+
+  <p><b>
+    Jabbers: <%=current_user.jabbers.count%>,
+    Following: <%= link_to current_user.friendships.count, following_path %>
+    Followed by: <%= link_to current_user.inverse_friendships.count, follower_path %>
+  </b></p>

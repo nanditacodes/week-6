@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<%= render partial: 'info' %>
+
+<div class="wrapper">
+
+<p>
+  <strong>Screen name:</strong>
+  <%= current_user.name || current_user.email %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= current_user.description %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= current_user.location %>
+</p>
+</div>

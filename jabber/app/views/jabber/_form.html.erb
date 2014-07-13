@@ -1,0 +1,4 @@
+<%= simple_form_for @jabber do |f| %>
+  <%= f.input :message, label: "Your message:", as: :text, :input_html => {:rows => 5, :cols => 40} %>
+  <%= f.button :submit, "Jabber!!" %>
+<% end %>

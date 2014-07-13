@@ -1,0 +1,7 @@
+<%= simple_form_for @user, :html => {class: "wrapper"} do |f| %>
+    <%= f.input :name %>
+    <%= f.input :description, as: :text, :input_html => {:rows => 5, :cols => 20}  %>
+    <%= f.input :location %>
+    <br>
+    <%= f.button :submit, "Update" %>
+<% end %>

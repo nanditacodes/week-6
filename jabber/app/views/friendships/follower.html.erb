@@ -1,0 +1,14 @@
+
+<div class="wrapper">
+  <h4>Followed by:</h4>
+  <% if @follower.length == 0 %>
+    <%= "No one" %>
+  <% end %>
+  <ul>
+  <% @follower.each do |friendship| %>
+    <li><%= friendship.user.name || friendship.user.email %>&nbsp;
+        <%= link_to 'Remove', friendship, method: :delete, data: { confirm: 'Are you sure?' } %>
+    </li>
+  <% end %>
+  </ul>
+</div>
