@@ -6,7 +6,7 @@
   <% end %>
   <ul>
   <% @follower.each do |friendship| %>
-    <li><%= friendship.user.name || friendship.user.email %>&nbsp;
+    <li><%= friendship.user.get_name %>&nbsp;
         <%= link_to 'Remove', friendship, method: :delete, data: { confirm: 'Are you sure?' } %>
     </li>
   <% end %>

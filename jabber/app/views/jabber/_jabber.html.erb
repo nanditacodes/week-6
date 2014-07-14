@@ -1,5 +1,5 @@
 
 <% jabbers.each do |jabber| %>
-  <p><b> &nbsp;&nbsp;<%= jabber.user.name || jabber.user.email %> &nbsp; <%=time_ago_in_words(jabber.created_at) %> ago</b></p>
+  <p><b> &nbsp;&nbsp;<%= jabber.user.get_name %> &nbsp; <%=time_ago_in_words(jabber.created_at) %> ago</b></p>
   <p>&nbsp;&nbsp;<%= jabber.message %></p>
 <% end %>

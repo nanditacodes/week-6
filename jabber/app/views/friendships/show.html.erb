@@ -2,7 +2,7 @@
 <div class="message-box"
   <p>
     <strong>
-      <%= @friendship.user.name || @friendship.user.email %> is now following <%= @friendship.friend.name %>
+      <%= @friendship.user.get_name %> is now following <%= @friendship.friend.get_name %>
     </strong>
   </p>
   <%= link_to 'Back', root_path %>

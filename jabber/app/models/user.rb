@@ -9,5 +9,12 @@ class User < ActiveRecord::Base
   has_many :followers, :through => :inverse_friendships, :source => :user
   has_many :jabbers
 
+  def get_name
+    if self.name.blank?
+      ret_name = self.email
+    else
+      ret_name = self.name
+    end
+  end
 
 end
