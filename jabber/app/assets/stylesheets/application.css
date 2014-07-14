@@ -14,13 +14,26 @@
  *= require_self
  */
  .main {
-   background-color: #95A5A6;
+   background-color: #F1A9A0;
    background-position: center;
    font-family: Georgia, times, serif;
    line-height: 1.4em;
    margin: 0px;
 }
-
+#main-content {
+  background-color: #67809F;
+  font-size: 105%;
+  padding: 10px;
+  margin: 0px 310px 10px 10px;
+}
+#sidebar  {
+  background: #BFBFBF;
+  font-size: 105%;
+  padding: 10px;
+  margin: 25px 10px 10px 10px;
+  width: 280px;
+  float: right;
+}
 
 li a:link {
     color: blue;
